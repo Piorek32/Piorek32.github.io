@@ -1,0 +1,158 @@
+.project-content {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  position: absolute;
+  transition: 0.5s all;
+  left: -9999px;
+  align-items: center;
+}
+
+.project-content.add {
+  top: 0px;
+  left: 0px;
+}
+
+
+.project-content .Contact {
+  position: absolute;
+  top:50px;
+  right: 50px;
+  color: black;
+  left:unset ;
+
+}
+
+.project-content .aboutME:after {
+  background-color: black;
+}
+
+.project-content .aboutME:before {
+  background-color: black;
+}
+.project-content .Contact:after {
+  background-color: black;
+}
+
+.project-content .Contact:before {
+  background-color: black;
+}
+.project-content .homeBtn:after {
+  background-color: black;
+}
+
+.project-content .homeBtn:before {
+  background-color: black;
+
+}
+
+.project-content .aboutME:after, .Contact:before {
+  background-color: black;
+}
+
+.project-content .aboutME:before, .Contact:after {
+  background-color: black;
+}
+
+.project-content .aboutME {
+  color: black;
+}
+.project-content .homeBtn {
+  color: black;
+}
+.project-conteiner {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  background-color: white;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  align-items: center;
+
+}
+
+.col {
+  margin: 0 15px;
+  width: 30%;
+  height:95%;
+  background-color: white;
+ ;
+
+}
+.box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+}
+.shadow {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: red;
+  opacity: 0.8;
+
+
+}
+.photo-box {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+
+}
+.photo-box img {
+
+  overflow: hidden;
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  transition: 0.5s all;
+
+}
+
+img:hover {
+  transform: translateY(5px);
+  transform: scale(1.05);
+  box-shadow: 13px 6px 44px -16px rgba(0,0,0,0.75);
+
+}
+img:hover h2 {
+  opacity: 1;
+}
+.project-title {
+  opacity: 0;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+//img:hover {
+//  @for $i from 1 through 4 {
+//    .shadow#{$i} {
+//      transform: translateY(#{$i}*20px);
+//    }
+//
+//  }
+//}
+
+
+//@for $i from 1 through 4 {
+//  .shadow#{$i} {
+//    border: 1px solid black;
+//    opacity: 0.2*$i;
+//    background-color: red;
+//    position: absolute;
+//    top: 0px;
+//    left: 0px;
+//    display: block;
+//    width: 100%;
+//    height: 100%;
+//  }
+//
+//}
