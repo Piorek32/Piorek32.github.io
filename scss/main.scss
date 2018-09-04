@@ -275,6 +275,11 @@ button {
   background-color: gray;
   position: absolute;
   left: -500px;
+  transition: ease-in-out 1s;
+}
+
+.hamburger-nav.add {
+  left: 0px;
 }
 
 
@@ -285,8 +290,10 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 
 }
 .hamburger-content button {
   position: relative;
+  letter-spacing: 2px;
 }

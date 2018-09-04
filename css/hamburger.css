@@ -715,4 +715,13 @@
     button {
         display: none;
     }
+    #button, .nav-aboutME, .nav-Contact, .nav-project {
+        display: inline-block;
+    }
+    .titel {
+        font-size: 40px;
+    }
+    .title-down {
+        font-size: 40px;
+    }
 }
