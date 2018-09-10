@@ -61,6 +61,8 @@
   left: -9999px;
   z-index: 2;
   transition: 10s ease-in-out;
+  overflow: hidden;
+
 
 }
 
@@ -274,8 +276,10 @@ button {
   height: 500px;
   background-color: gray;
   position: absolute;
-  left: -500px;
+  left: -9999px;
   transition: ease-in-out 1s;
+  position: fixed;
+  z-index: 1;
 }
 
 .hamburger-nav.add {
@@ -296,4 +300,13 @@ button {
 .hamburger-content button {
   position: relative;
   letter-spacing: 2px;
+
+}
+
+@media (max-width: 600px) {
+  .hamburger-nav {
+    width: 100%;
+    height: 100vh;
+  }
+
 }

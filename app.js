@@ -30,6 +30,8 @@ startBtn.addEventListener('click', activeHome)
 
 function removeStages() {
     stages.forEach(stage => stage.classList.remove('add'));
+    stages.forEach(stage => stage.style.transform.scale= "1,2");
+
 
 }
 
@@ -46,7 +48,8 @@ function project () {
     projectStage.classList.add('add')
 }
 function home() {
-    heroStage.classList.add('add')
+    heroStage.classList.add('add');
+    contactStage.classList.add('fade')
 }
 
 contactBtn.forEach(btn => btn.addEventListener('click', removeStages))

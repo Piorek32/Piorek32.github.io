@@ -18,7 +18,10 @@
     background-color: transparent;
     border: 0;
     margin: 0;
-    overflow: visible; }
+    overflow: visible;
+    position: fixed;
+    z-index: 1;
+}
 .hamburger:hover {
     opacity: 0.7; }
 
@@ -32,6 +35,15 @@
     display: block;
     top: 50%;
     margin-top: -2px; }
+.project-content .hamburger-inner, .project-content .hamburger-inner::before, .project-content .hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: white;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; }
 .contact-content .hamburger-inner, .contact-content .hamburger-inner::before, .contact-content .hamburger-inner::after {
     width: 40px;
     height: 4px;
@@ -709,19 +721,28 @@
     transform: rotate(-90deg); }
 
 @media (max-width: 600px) {
+
+
     .hamburger {
         display: inline-block;
     }
+
     button {
         display: none;
     }
-    #button, .nav-aboutME, .nav-Contact, .nav-project {
+
+    #button, .nav-aboutME, .nav-Contact, .nav-project, .nav-home{
         display: inline-block;
     }
+
     .titel {
         font-size: 40px;
+        left: 10px;
+        transform: translate(-0%, -100%);
     }
+
     .title-down {
         font-size: 40px;
+        left: 10px
     }
 }
