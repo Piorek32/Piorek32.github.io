@@ -2,11 +2,11 @@
 
 var hamburger = document.querySelectorAll('.hamburger')
 var hamburgerNav = document.querySelectorAll('.hamburger-nav')
-
+console.log(hamburger)
 function active() {
     this.classList.toggle('is-active')
    // hamburgerNav.classList.toggle('add')
-    this.nextElementSibling.classList.add('add')
+   this.nextElementSibling.classList.add('add')
 }
 
 hamburger.forEach(hamb => hamb.addEventListener('click', active))
@@ -26,6 +26,7 @@ var homeStage = document.querySelector('.hero')
 
 
 contactBtn.forEach(btn => btn.addEventListener('click', function () {
+    hamburger.forEach(hamb => hamb.classList.remove('is-active'))
     hamburgerNav.forEach(hamb => hamb.classList.remove('add'))
     stages.forEach(stage => stage.classList.remove('add'))
     contactStage.classList.add('add')
@@ -33,13 +34,14 @@ contactBtn.forEach(btn => btn.addEventListener('click', function () {
 }))
 
 aboutBtn.forEach(btn => btn.addEventListener('click', function () {
-   hamburgerNav.forEach(hamb => hamb.classList.remove('add'))
+    hamburger.forEach(hamb => hamb.classList.remove('is-active'))
+    hamburgerNav.forEach(hamb => hamb.classList.remove('add'))
     stages.forEach(stage => stage.classList.remove('add'))
     aboutStage.classList.add('add')
-
 }))
 
 projectBtn.forEach(btn => btn.addEventListener('click', function () {
+    hamburger.forEach(hamb => hamb.classList.remove('is-active'))
     hamburgerNav.forEach(hamb => hamb.classList.remove('add'))
     stages.forEach(stage => stage.classList.remove('add'))
     projectStage.classList.add('add')
@@ -47,9 +49,10 @@ projectBtn.forEach(btn => btn.addEventListener('click', function () {
 }))
 //
 homeBtn.forEach(btn => btn.addEventListener('click', function () {
+    hamburger.forEach(hamb => hamb.classList.remove('is-active'))
     hamburgerNav.forEach(hamb => hamb.classList.remove('add'))
     stages.forEach(stage => stage.classList.remove('add'))
-    homeStage.classList.add('add')
+    contactStage.classList.add('add')
 
 }))
 

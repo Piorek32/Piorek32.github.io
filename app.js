@@ -3,7 +3,7 @@ var contactBtn = document.querySelectorAll('.Contact')
 var aboutBtn = document.querySelectorAll('.aboutME')
 var projectBtn = document.querySelectorAll('.project')
 var homeBtn = document.querySelectorAll('.homeBtn')
-
+console.log(projectBtn)
 var stages = document.querySelectorAll('[id^=stage]')
 var aboutStage = document.querySelector('#stage-aboutME')
 var contactStage = document.querySelector('.contact-content')

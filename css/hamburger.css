@@ -35,6 +35,15 @@
     display: block;
     top: 50%;
     margin-top: -2px; }
+.aboutMe-content .hamburger-inner, .aboutMe-content .hamburger-inner::before, .aboutMe-content .hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: black;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; }
 .project-content .hamburger-inner, .project-content .hamburger-inner::before, .project-content .hamburger-inner::after {
     width: 40px;
     height: 4px;
