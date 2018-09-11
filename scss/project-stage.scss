@@ -23,12 +23,10 @@
   left:unset ;
 
 }
-
 .project-content .hamburger {
-  position: absolute;
-  left: 0px;
-  top: 0px;
+  top: 15px;
 }
+
 
 .project-content .aboutME:after {
   background-color: black;
@@ -127,7 +125,7 @@ img:hover {
   box-shadow: 13px 6px 44px -16px rgba(0,0,0,0.75);
 
 }
-img:hover h2 {
+.photo-box:hover h2 {
   opacity: 1;
 }
 .project-title {
@@ -136,6 +134,7 @@ img:hover h2 {
   top: 25%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
 }
 
 
@@ -149,6 +148,11 @@ img:hover h2 {
     margin-top: 10px;
   }
 
+}
+
+
+.js-game {
+  color: black;
 }
 
 //img:hover {

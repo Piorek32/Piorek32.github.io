@@ -52,7 +52,7 @@ homeBtn.forEach(btn => btn.addEventListener('click', function () {
     hamburger.forEach(hamb => hamb.classList.remove('is-active'))
     hamburgerNav.forEach(hamb => hamb.classList.remove('add'))
     stages.forEach(stage => stage.classList.remove('add'))
-    contactStage.classList.add('add')
+    homeStage.classList.add('add')
 
 }))
 
