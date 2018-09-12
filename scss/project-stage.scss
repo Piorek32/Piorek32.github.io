@@ -10,8 +10,8 @@
 }
 
 .project-content.add {
-  top: 15px;
-  left: 15px;
+  top: 0px;
+  left: 0px;
 }
 
 
@@ -142,10 +142,11 @@ img:hover {
 @media (max-width: 600px) {
   .project-conteiner {
     flex-direction: column;
+    border: none;
   }
   .col {
     width: 100%;
-    margin-top: 10px;
+    padding: 20px;
   }
 
 }
