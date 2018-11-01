@@ -121,10 +121,15 @@
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 850px) {
   .mail-container {
     margin-left: 20px;
     margin-top: 200px
+
+  }
+  .mail-content {
+    font-size: 30px;
+    margin-top: 50px;
   }
 
 }

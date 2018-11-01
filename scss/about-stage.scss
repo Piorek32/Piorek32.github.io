@@ -87,6 +87,7 @@
  }
 .skills > div {
   margin: 20px;
+
 }
 
 .aboutMe-content .hamburger {
@@ -123,6 +124,7 @@
   height: 150px;
   background-size: contain;
   background-repeat: no-repeat;
+
 }
 
 
@@ -133,7 +135,7 @@
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 850px) {
   .about-container {
     display: unset;
     flex-direction: column;
@@ -152,6 +154,22 @@
     margin: 20px;
     width: 300px;
     height: 300px;
+  //  position: absolute;
+    left: -1000px;
+    transition: 1s all;
+    opacity: 0;
+
+  }
+
+  .skills > div.out {
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    //position: unset;
+    left: unset;
+    transition: 1s all;
+    opacity: 1;
+
   }
 }
 
