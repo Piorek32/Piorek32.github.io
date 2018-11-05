@@ -56,3 +56,33 @@ homeBtn.forEach(btn => btn.addEventListener('click', function () {
 
 }))
 
+
+
+
+
+//hamburger change color project stage ////
+
+
+var secondProjectImg = document.querySelector("#secondProject")
+var temHei = secondProjectImg.offsetTop
+
+function sc() {
+    const val = (window.scrollY - window.innerHeight - 100)
+
+    if (val > temHei) {
+        projectStage.classList.add("addH")
+    }  else {
+        projectStage.classList.remove("addH")
+    }
+
+}
+
+window.addEventListener("scroll", sc
+
+
+)
+
+
+
+
+

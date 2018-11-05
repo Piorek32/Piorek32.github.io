@@ -13,8 +13,7 @@ function shadow(e) {
     }
 
     const xWalk = Math.round((x / width * walk) - (walk / 2));
-    const yWalk = Math.round((y / height * walk) - (walk / 2));
-
+    const yWalk = Math.round((y / height * walk) - (walk / 2))
     text.style.textShadow =
         `${xWalk}px ${yWalk}px 0 rgba(255, 255, 255, 0.58)`;
 
@@ -25,3 +24,41 @@ function shadow(e) {
 }
 
 heros.addEventListener('mousemove', shadow);
+
+
+
+var skilssss = document.querySelector(".skills")
+var temp = skilssss.querySelectorAll('div')
+
+
+function debounce(func, wait = 10, immediate = true) {
+    var timeout;
+    return function() {
+        var context = this, args = arguments;
+        var later = function() {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+        };
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+    };
+};
+
+//const sliderImages = document.querySelectorAll('.slide-in');
+
+function checkSlide() {
+    temp.forEach(sliderImage => {
+
+        const slideInAt = (window.scrollY + window.innerHeight) - 150;
+        const isHalfShown = slideInAt > sliderImage.offsetTop;
+        if (isHalfShown ) {
+            sliderImage.classList.add('out')
+        } else {
+            sliderImage.classList.remove('out')
+        }
+    });
+}
+
+window.addEventListener('scroll', debounce(checkSlide));

@@ -27,6 +27,10 @@
   top: 15px;
 }
 
+ .add.addH .hamburger-inner, .add.addH .hamburger-inner::before, .add.addH .hamburger-inner::after {
+  background-color: black;
+}
+
 
 .project-content .aboutME:after {
   background-color: black;
