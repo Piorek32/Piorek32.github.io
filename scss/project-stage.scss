@@ -65,9 +65,15 @@
 
 .project-content .aboutME {
   color: black;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
 }
 .project-content .homeBtn {
+  position: absolute;
   color: black;
+  bottom: 50px;
+  left: 50px;
 }
 .project-conteiner {
   width: 100%;
@@ -124,9 +130,9 @@
 
 }
 
-img:hover {
-  transform: translateY(5px);
-  transform: scale(1.05);
+.project-content img:hover {
+ transform: translateY(5px);
+ // transform: scale(1.05);
   box-shadow: 13px 6px 44px -16px rgba(0,0,0,0.75);
 
 }
