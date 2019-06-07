@@ -1,11 +1,11 @@
 var startBtn = document.querySelector('#button')
-var contactBtn = document.querySelectorAll('.Contact')
-var aboutBtn = document.querySelectorAll('.aboutME')
-var projectBtn = document.querySelectorAll('.project')
+var contactBtn = document.querySelectorAll('.contactBtn')
+var aboutBtn = document.querySelectorAll('.aboutBtn')
+var projectBtn = document.querySelectorAll('.projectBtn')
 var homeBtn = document.querySelectorAll('.homeBtn')
 
 var stages = document.querySelectorAll('[id^=stage]')
-console.log(stages)
+
 var aboutStage = document.querySelector('#stage-aboutME')
 var contactStage = document.querySelector('.contact-content')
 var projectStage = document.querySelector('.project-content')

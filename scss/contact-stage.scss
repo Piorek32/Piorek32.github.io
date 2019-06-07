@@ -24,8 +24,6 @@
 }
 
 
-
-
 .contact-content .homeBtn {
   position: absolute;
   bottom: 50px;
@@ -36,27 +34,25 @@
 
 }
 
-.contact-content .aboutME:after {
-  background-color: black;
+
+.contact-content .btnSpan {
+  height: 0px;
+  position: absolute;
+  left: 0px;
+  bottom: 20px;
+  background-color: rgba(#eee, 0.5);
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+.contact-content .homeBtn:hover span {
+  height: 14px;
+  width: 100%;
+  z-index: 9;
 }
 
-.contact-content .aboutME:before {
-  background-color: black;
-}
-.contact-content .project:after {
-  background-color: black;
-}
 
-.contact-content .project:before {
-  background-color: black;
-}
-.contact-content .homeBtn:after {
-  background-color: black;
-}
 
-.contact-content .homeBtn:before {
-  background-color: black;
-}
+
 
 .contact-container {
   border-bottom: 1px solid black;

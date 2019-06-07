@@ -18,32 +18,35 @@
   left: 0px;
 }
 
-.aboutMe-content .Contact {
+.aboutMe-content .contactBtn {
   position: absolute;
   top: 50px;
   left: 50px;
   color: black;
 }
-.aboutMe-content  .Contact:after {
+.aboutMe-content  .contactBtn:after {
   background-color: black;
 }
 
-.aboutMe-content  .Contact:before {
+.aboutMe-content  .contactBtn:before {
  background-color: black;
 
 }
-.aboutMe-content .project {
+.aboutMe-content .projectBtn {
   color: black;
 }
-.aboutMe-content  .project:after {
+.aboutMe-content  .projectBtn:after {
   background-color: black;
 }
 
-.aboutMe-content  .project:before {
+.aboutMe-content  .projectBtn:before {
   background-color: black;
 
 }
 .aboutMe-content .homeBtn {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
   color: black;
 }
 .aboutMe-content  .homeBtn:after {
@@ -54,6 +57,24 @@
   background-color: black;
 
 }
+
+
+.aboutMe-content .btnSpan { 
+ 
+  height: 0px;
+  position: absolute;
+  left: 0px;
+  bottom: 20px;
+   background-color: rgba(#eee, 0.5);
+  z-index: -1;
+
+  transition: all .3s ease-in-out;
+}
+ .aboutBtn:hover .btnSpan, .projectBtn:hover .btnSpan, .contactBtn:hover .btnSpan {
+  height: 14px;
+  width: 100%;
+}
+
 
 
 

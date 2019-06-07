@@ -122,110 +122,78 @@ button {
 }
 
 
-
-
-
-
-.aboutME {
-  position: absolute;
-  top:50px;
-  left: 50px;
-}
-
-.aboutME:before, .Contact:before, .project:before, .Contact:before, .homeBtn:before {
-  content: '';
-  height: 40px;
-  width: 1px;
-  background-color: white;
-  position: absolute;
-  top: -50px;
-  left: 50%;
-  display: block;
-  transition: 0.5s all;
-  opacity: 0;
-
-}
-.aboutME:after, .Contact:after, .project:after, .homeBtn:after {
-  content: '';
-  height: 10px;
-  width: 1px;
-  background-color: white;
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  display: block;
-  transition: 0.5s all;
-  opacity: 0;
-
-  //  transform: rotate(180deg);
-}
-
-.aboutME:hover:before {
-  display: block;
-  height: 40px;
-  opacity: 1;
-  transform: rotateX(180deg);
-}
-
-.aboutME:hover:after {
-  display: block;
-  height: 40px;
-  opacity: 1;
-}
-
-.Contact {
+.contactBtn {
   position: absolute;
   bottom: 50px;
   left: 50px;
 }
 
-.Contact:hover:before {
-  display: block;
-  height: 40px;
-  opacity: 1;
-  transform: rotateX(180deg);
-}
-
-.Contact:hover:after {
-  display: block;
-  height: 40px;
-
-  opacity: 1;
-}
-
-
-.project {
+.projectBtn {
   position: absolute;
   top: 50px;
   right:50px;
 }
-.project:hover:before {
-  display: block;
-  height: 40px;
-  opacity: 1;
-  transform: rotateX(180deg);
+
+.aboutBtn {
+  position: absolute;
+  top:50px;
+  left: 50px;
 }
 
-.project:hover:after {
+.aboutBtn:before, .ContactBtn.Contact:before, .projectBtn:before, .contactBtn:before, .homeBtn:before {
+  content: '';
+  height: 30px;
+  width: 1px;
+  background-color: white;
+  position: absolute;
+  top: -50%;
+  left: 50%;
   display: block;
-  height: 40px;
+  transition: 0.5s all;
+  opacity: 0;
 
+}
+.aboutBtn:after, .contactBtn:after, .projectBtn:after, .homeBtn:after, {
+  content: '';
+  height: 30px;
+  width: 1px;
+  background-color: white;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  display: block;
+  transition: 0.5s all;
+  opacity:0;
+
+}
+
+.aboutBtn:hover:before, .contactBtn:hover:before, .homeBtn:hover:before, .projectBtn:hover:before  {
+  top: -40%;
+  opacity: 1;
+  //transform: rotateX(180deg);
+}
+
+.aboutBtn:hover:after, .contactBtn:hover:after, .projectBtn:hover:after, .homeBtn:hover:after {
+  top: 80%;
   opacity: 1;
 }
-.homeBtn:hover:before {
-  display: block;
-  height: 40px;
-  opacity: 1;
-  transform: rotateX(180deg);
-}
-
-.homeBtn:hover:after {
-  display: block;
-  height: 40px;
-
-  opacity: 1;
-}
-
+.btnSpan { 
+ 
+    height: 0px;
+    position: absolute;
+    left: 0px;
+    bottom: 20px;
+    // background-color: rgba(#eee, 0.5);
+     background-color: #181616;
+    z-index: -1;
+  
+    transition: all .3s ease-in-out;
+  }
+   .aboutBtn:hover .btnSpan, .projectBtn:hover .btnSpan, .contactBtn:hover .btnSpan {
+    height: 14px;
+    width: 100%;
+    
+  }
 
 
 #triangle-up {
