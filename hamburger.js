@@ -2,11 +2,11 @@
 
 var hamburger = document.querySelectorAll('.hamburger')
 var hamburgerNav = document.querySelectorAll('.hamburger-nav')
-console.log(hamburger)
+
 function active() {
     this.classList.toggle('is-active')
    // hamburgerNav.classList.toggle('add')
-   this.nextElementSibling.classList.add('add')
+   this.nextElementSibling.classList.toggle('add')
 }
 
 hamburger.forEach(hamb => hamb.addEventListener('click', active))
