@@ -5,13 +5,12 @@ var hamburgerNav = document.querySelectorAll('.hamburger-nav')
 
 function active() {
     this.classList.toggle('is-active')
-   // hamburgerNav.classList.toggle('add')
    this.nextElementSibling.classList.toggle('add')
 }
 
 hamburger.forEach(hamb => hamb.addEventListener('click', active))
 
-
+let a = "d"
 var stages = document.querySelectorAll('[id^=stage]')
 var contactBtn = document.querySelectorAll('.nav-Contact')
 var aboutBtn = document.querySelectorAll('.nav-aboutME')
@@ -24,7 +23,7 @@ var contactStage = document.querySelector('.contact-content')
 var projectStage = document.querySelector('.project-content')
 var homeStage = document.querySelector('.hero')
 
-
+ 
 contactBtn.forEach(btn => btn.addEventListener('click', function () {
     hamburger.forEach(hamb => hamb.classList.remove('is-active'))
     hamburgerNav.forEach(hamb => hamb.classList.remove('add'))
