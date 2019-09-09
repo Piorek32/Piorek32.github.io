@@ -15,14 +15,7 @@
 }
 
 
-.project-content .Contact {
-  position: absolute;
-  top:50px;
-  right: 50px;
-  color: black;
-  left:unset ;
 
-}
 .project-content .hamburger {
   top: 15px;
 }
@@ -32,18 +25,18 @@
 }
 
 
-.project-content .aboutME:after {
+.project-content .aboutBtn:after {
   background-color: black;
 }
 
-.project-content .aboutME:before {
+.project-content .aboutBtn:before {
   background-color: black;
 }
-.project-content .Contact:after {
+.project-content .contactBtn:after {
   background-color: black;
 }
 
-.project-content .Contact:before {
+.project-content .contactBtn:before {
   background-color: black;
 }
 .project-content .homeBtn:after {
@@ -55,15 +48,15 @@
 
 }
 
-.project-content .aboutME:after, .Contact:before {
+.project-content .aboutBtn:after, .contactBtn:before {
   background-color: black;
 }
 
-.project-content .aboutME:before, .Contact:after {
+.project-content .aboutME:before, .contactBtn:after {
   background-color: black;
 }
 
-.project-content .aboutME {
+.project-content .aboutBtn {
   color: black;
   position: absolute;
   bottom: 50px;
@@ -74,6 +67,14 @@
   color: black;
   bottom: 50px;
   left: 50px;
+}
+.project-content .contactBtn {
+  position: absolute;
+  top:50px;
+  right: 50px;
+  color: black;
+  left:unset ;
+
 }
 .project-conteiner {
   width: 100%;

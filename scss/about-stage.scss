@@ -79,7 +79,7 @@
 
 
 .col-1-3 {
-  width: 40%;
+  width: 50%;
   height: 100%;
 
 
@@ -124,8 +124,9 @@
  }
 
 
-.php-icon {
-  background-image: url("../img_55485.png");
+.node-icon {
+  background-image: url("../node.png");
+  background-position: center;
   width: 150px;
   height: 150px;
   background-size: contain;
@@ -147,8 +148,28 @@
   background-repeat: no-repeat;
 
 }
+.angular-icon {
+  background-image: url("../angular_solidBlack.png");
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.ts-icon {
+  background-image: url("../ts.png");
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
-
+.sass-icon {
+  background-image: url("../sass.png");
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .about-container {
   height: 100%;
   width: 100%;
