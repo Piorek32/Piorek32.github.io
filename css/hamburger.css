@@ -728,6 +728,24 @@
 .hamburger--vortex-r.is-active .hamburger-inner::after {
     bottom: 0;
     transform: rotate(-90deg); }
+    .is-active .hamburger-inner.ham {
+        display: none;
+    }
+
+    .hamburger-inner.ham, .hamburger-inner.ham::after, .hamburger-inner.ham::before {
+        left: -40px;
+        background-color: black;
+        transition: 0.9s all ease-out;
+    }
+    .hamburger-box:hover .hamburger-inner.ham {
+        left: 40px;
+    }
+    .hamburger-box:hover .hamburger-inner.ham::after {
+        left: 40px;
+    }
+    .hamburger-box:hover .hamburger-inner.ham::before {
+        left: 40px;
+    }
 
 @media (max-width: 850px) {
 
@@ -746,8 +764,8 @@
 
     .titel {
         font-size: 40px;
-        left: 10px;
-        transform: translate(-0%, -100%);
+        left: 10px important; 
+         transform: translate(-0%, -100%);
     }
 
     .title-down {

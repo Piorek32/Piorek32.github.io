@@ -7,6 +7,7 @@
   transition: 0.5s all;
   left: -9999px;
   align-items: center;
+  
 }
 
 .project-content.add {
@@ -159,6 +160,8 @@
   .col {
     width: 100%;
     padding: 20px;
+    height: 70%;
+    width: 50%
   }
 
   .project-content {
